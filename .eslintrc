@@ -1,3 +1,6 @@
 {
-    "extends": "eslint-config-airbnb"
+	"extends": ["airbnb", "airbnb/hooks"],
+	"rules": {
+		"indent": ["error", 4]
+	}
 }
