@@ -7,7 +7,11 @@
 ## Install
 
 ```bash
-npm install --save mini-juice
+npm install mini-juice
+```
+or
+```bash
+yarn add mini-juice
 ```
 
 ## Usage
