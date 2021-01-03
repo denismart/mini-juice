@@ -1,6 +1,6 @@
 {
 	"name": "mini-juice",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Now you can",
 	"author": "denismart",
 	"license": "MIT",
@@ -28,6 +28,6 @@
 		"rollup-plugin-multi-input": "^1.2.0"
 	},
 	"files": [
-		"dist"
+		"dist/."
 	]
 }
