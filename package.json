@@ -1,13 +1,13 @@
 {
 	"name": "mini-juice",
-	"version": "0.1.26",
+	"version": "0.1.32",
 	"description": "Now you can",
 	"author": "denismart",
 	"license": "MIT",
 	"repository": "denismart/mini-juice",
 	"scripts": {
 		"build": "rollup --config",
-		"publish-it": "yarn build && node after-build.js && yarn publish dist && cp ./dist/package.json .",
+		"publish-it": "yarn build && cp package.json ./dist && cp README.md ./dist && git add -f ./dist/package.json && yarn publish dist && cp ./dist/package.json . && git reset HEAD -- ./dist/package.json",
 		"test:lint": "eslint ."
 	},
 	"peerDependencies": {
@@ -27,8 +27,5 @@
 		"react-scripts": "^3.4.1",
 		"rollup": "^2.35.1",
 		"rollup-plugin-multi-input": "^1.2.0"
-	},
-	"files": [
-		"dist/common/"
-	]
+	}
 }
