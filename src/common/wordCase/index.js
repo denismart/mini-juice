@@ -1,4 +1,4 @@
-import numberWithSpaces from './numberWithSpaces';
+import numberWithSpaces from '../numberWithSpaces/index';
 
 /**
  * Склоняет слово в зависимости от числа
@@ -10,14 +10,11 @@ import numberWithSpaces from './numberWithSpaces';
  * @param {boolean} isNumWithSpaces - Разделять ли пробелами каждые 3 порядка.
  * @return {string}
  */
-const wordCase = (num, one, two, five, withNum, isNumWithSpaces) => {
-    const currentWithNum = withNum !== undefined ? withNum : false;
-    const currentIsNumWithSpaces = isNumWithSpaces !== undefined ? isNumWithSpaces : true;
-
+const wordCase = (num, one, two, five, withNum = true, isNumWithSpaces = true) => {
     const checkNum = num % 100;
-    const numFormatted = currentIsNumWithSpaces ? numberWithSpaces(num) : num;
+    const numFormatted = isNumWithSpaces ? numberWithSpaces(num) : num;
 
-    const format = (numWithWord, word) => (currentWithNum ? `${numWithWord} ${word}` : numWithWord);
+    const format = (numWithWord, word) => (withNum ? `${numWithWord} ${word}` : word);
 
     if (checkNum % 10 === 1 && (checkNum < 10 || checkNum > 20)) {
         return format(numFormatted, one);

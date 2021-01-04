@@ -1,6 +1,10 @@
 {
 	"extends": ["airbnb", "airbnb/hooks"],
+	"env": {
+		"jest/globals": true
+	},
 	"rules": {
 		"indent": ["error", 4]
-	}
+	},
+	"plugins": ["jest"]
 }

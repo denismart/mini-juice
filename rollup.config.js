@@ -1,13 +1,20 @@
 import multiInput from 'rollup-plugin-multi-input';
+import babel from '@rollup/plugin-babel';
 
 export default [
     {
-        input: ['src/**/*.js'],
+        input: ['src/**/*[!.test].js'],
         output: {
             format: 'cjs',
             dir: 'dist',
             exports: 'auto',
         },
-        plugins: [multiInput()],
+        plugins: [
+            multiInput(),
+            babel({
+                babelHelpers: 'external',
+                exclude: 'node_modules/**',
+            }),
+        ],
     },
 ];
