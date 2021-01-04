@@ -1,5 +1,5 @@
-import numberWithSpaces from './numberWithSpaces/index';
-import randomInt from './randomInt/index';
-import wordCase from './wordCase/index';
+import numberWithSpaces from './numberWithSpaces';
+import randomInt from './randomInt';
+import wordCase from './wordCase';
 
 exports = { numberWithSpaces, randomInt, wordCase };

@@ -19,6 +19,7 @@ export default [
                 'process.env.REACT_APP_PROD_STATUS': process.env.REACT_APP_PROD_STATUS || JSON.stringify('none'),
             }),
         ],
+        external: ['react-ga'],
     },
     {
         input: ['src/**/*[!.test].js'],
@@ -40,5 +41,6 @@ export default [
             }),
             uglify(),
         ],
+        external: ['react-ga'],
     },
 ];

@@ -1,4 +1,4 @@
-import googleEvent from './googleEvent/index';
-import googleInit from './googleInit/index';
+import googleEvent from './googleEvent';
+import googleInit from './googleInit';
 
 exports = { googleEvent, googleInit };

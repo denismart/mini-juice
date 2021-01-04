@@ -1,4 +1,4 @@
-import numberWithSpaces from '../numberWithSpaces/index';
+import numberWithSpaces from '../numberWithSpaces';
 
 /**
  * Склоняет слово в зависимости от числа
