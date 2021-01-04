@@ -14,15 +14,13 @@ const googleInit = (code, isHardInit = true, isStartEvent = true, debug = false)
             gaOptions: {
                 cookieDomain: 'none',
                 cookieFlags: 'SameSite=None; Secure',
-                debug,
             },
+            debug,
         });
         GA.set('checkProtocolTask', null);
     } else {
         GA.initialize('UA-185334757-4', {
-            gaOptions: {
-                debug,
-            },
+            debug,
         });
     }
 
