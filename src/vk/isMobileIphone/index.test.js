@@ -16,7 +16,7 @@ describe('isMobileIphone === true', () => {
     });
 
     test('isMobileIphone #1', () => {
-        expect(isMobileIphone()).toBe(true);
+        expect(isMobileIphone()).toBeTruthy();
     });
 });
 
@@ -34,6 +34,6 @@ describe('isMobileIphone === false', () => {
     });
 
     test('isMobileIphone #2', () => {
-        expect(isMobileIphone()).toBe(false);
+        expect(isMobileIphone()).toBeFalsy();
     });
 });

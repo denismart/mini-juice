@@ -1,5 +1,5 @@
-import isMobileAndroid from '../isMobileAndroid';
-import isMobileIphone from '../isMobileIphone';
+import isMobileAndroid from '../isMobileAndroid/index';
+import isMobileIphone from '../isMobileIphone/index';
 
 /**
  * Проверить, что открыто через приложение на телефоне

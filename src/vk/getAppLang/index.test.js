@@ -15,5 +15,5 @@ afterEach(() => {
 });
 
 test('getAppLang #1', () => {
-    expect(getAppLang()).toBe('ru');
+    expect(getAppLang()).toMatch('ru');
 });

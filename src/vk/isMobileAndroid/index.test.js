@@ -16,7 +16,7 @@ describe('isMobileAndroid === true', () => {
     });
 
     test('isMobileAndroid #1', () => {
-        expect(isMobileAndroid()).toBe(true);
+        expect(isMobileAndroid()).toBeTruthy();
     });
 });
 
@@ -34,6 +34,6 @@ describe('isMobileAndroid === false', () => {
     });
 
     test('isMobileAndroid #2', () => {
-        expect(isMobileAndroid()).toBe(false);
+        expect(isMobileAndroid()).toBeFalsy();
     });
 });

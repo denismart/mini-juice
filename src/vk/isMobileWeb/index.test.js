@@ -16,7 +16,7 @@ describe('isMobileWeb === true', () => {
     });
 
     test('isMobileWeb #1', () => {
-        expect(isMobileWeb()).toBe(true);
+        expect(isMobileWeb()).toBeTruthy();
     });
 });
 
@@ -34,6 +34,6 @@ describe('isMobileWeb === false', () => {
     });
 
     test('isMobileWeb #2', () => {
-        expect(isMobileWeb()).toBe(false);
+        expect(isMobileWeb()).toBeFalsy();
     });
 });

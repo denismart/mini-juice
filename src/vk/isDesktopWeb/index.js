@@ -1,4 +1,4 @@
-import getAppPlatform from '../getAppPlatform';
+import getAppPlatform from '../getAppPlatform/index';
 
 /**
  * Проверить, что открыта браузерная полная версия

@@ -16,7 +16,7 @@ describe('isDesktopWeb === true', () => {
     });
 
     test('isDesktopWeb #1', () => {
-        expect(isDesktopWeb()).toBe(true);
+        expect(isDesktopWeb()).toBeTruthy();
     });
 });
 
@@ -34,6 +34,6 @@ describe('isDesktopWeb === false', () => {
     });
 
     test('isDesktopWeb #2', () => {
-        expect(isDesktopWeb()).toBe(false);
+        expect(isDesktopWeb()).toBeFalsy();
     });
 });

@@ -15,5 +15,5 @@ afterEach(() => {
 });
 
 test('getAppPlatform #1', () => {
-    expect(getAppPlatform()).toBe('desktop_web');
+    expect(getAppPlatform()).toMatch('desktop_web');
 });

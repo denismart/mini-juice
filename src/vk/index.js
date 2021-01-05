@@ -1,13 +1,13 @@
-import getAppId from './getAppId';
-import getAppLang from './getAppLang';
-import getAppPlatform from './getAppPlatform';
-import getAppUserId from './getAppUserId';
-import isDesktopWeb from './isDesktopWeb';
-import isMobile from './isMobile';
-import isMobileAndroid from './isMobileAndroid';
-import isMobileIphone from './isMobileIphone';
-import isMobileWeb from './isMobileWeb';
-import randomizeRequestId from './randomizeRequestId';
+import getAppId from './getAppId/index';
+import getAppLang from './getAppLang/index';
+import getAppPlatform from './getAppPlatform/index';
+import getAppUserId from './getAppUserId/index';
+import isDesktopWeb from './isDesktopWeb/index';
+import isMobile from './isMobile/index';
+import isMobileAndroid from './isMobileAndroid/index';
+import isMobileIphone from './isMobileIphone/index';
+import isMobileWeb from './isMobileWeb/index';
+import randomizeRequestId from './randomizeRequestId/index';
 
 exports = {
     getAppId,
