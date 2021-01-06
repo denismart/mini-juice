@@ -1,5 +1,5 @@
 import multiInput from 'rollup-plugin-multi-input';
-import replace from '@rollup/plugin-replace';
+import commonjs from '@rollup/plugin-commonjs';
 
 export default [
     {
@@ -11,12 +11,8 @@ export default [
         },
         plugins: [
             multiInput(),
-            replace({
-                exclude: 'node_modules/**',
-                'process.env.NODE_ENV': process.env.NODE_ENV || JSON.stringify('production'),
-                'process.env.REACT_APP_PROD_STATUS': process.env.REACT_APP_PROD_STATUS || JSON.stringify('none'),
-            }),
+            commonjs(),
         ],
-        external: ['react-ga'],
+        external: ['react-ga', '@vkontakte/vk-bridge'],
     },
 ];
