@@ -1,6 +1,6 @@
 {
     "name": "mini-juice",
-    "version": "0.2.20",
+    "version": "0.2.21",
     "description": "Now you can",
     "author": "denismart",
     "license": "MIT",
@@ -27,6 +27,7 @@
         "@babel/plugin-external-helpers": "^7.12.1",
         "@babel/plugin-transform-modules-commonjs": "^7.12.1",
         "@babel/preset-env": "^7.12.11",
+        "@rollup/plugin-commonjs": "^17.0.0",
         "cross-env": "^7.0.2",
         "eslint": "^5.16.0 || ^6.8.0 || ^7.2.0",
         "eslint-config-airbnb": "18.2.1",
