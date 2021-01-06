@@ -1,6 +1,6 @@
 {
     "name": "mini-juice",
-    "version": "0.2.19",
+    "version": "0.2.20",
     "description": "Now you can",
     "author": "denismart",
     "license": "MIT",
@@ -13,11 +13,13 @@
         "test:jest": "jest --passWithNoTests",
         "peers-i": "install-peers -f"
     },
-    "peerDependencies": {
-        "@vkontakte/vk-bridge": "^2.3.0",
+    "dependencies": {
         "eruda": "^2.4.1",
         "eruda-code": "^2.0.0",
-        "eruda-dom": "^2.0.0",
+        "eruda-dom": "^2.0.0"
+    },
+    "peerDependencies": {
+        "@vkontakte/vk-bridge": "^2.3.0",
         "react": "^16.0.0",
         "react-ga": "^3.3.0"
     },
