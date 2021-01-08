@@ -1,4 +1,5 @@
 export { default as bridgeApiRequest } from './bridgeApiRequest/index';
+export { default as bridgeGetAccessToken } from './bridgeGetAccessToken/index';
 export { default as bridgeInitApp } from './bridgeInitApp/index';
 export { default as bridgeSetStatusBar } from './bridgeSetStatusBar/index';
 export { default as getAppId } from './getAppId/index';

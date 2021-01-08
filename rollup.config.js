@@ -13,6 +13,10 @@ export default [
             multiInput(),
             commonjs(),
         ],
-        external: ['react-ga', '@vkontakte/vk-bridge'],
+        external: [
+            'eruda',
+            'react-ga',
+            '@vkontakte/vk-bridge',
+        ],
     },
 ];
