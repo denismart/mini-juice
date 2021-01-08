@@ -1,6 +1,6 @@
 {
     "name": "mini-juice",
-    "version": "0.2.25",
+    "version": "0.3.0",
     "description": "Now you can",
     "author": "denismart",
     "license": "MIT",
@@ -16,6 +16,7 @@
     "dependencies": {
         "@vkontakte/vk-bridge": "^2.3.0",
         "eruda": "^2.4.1",
+        "konva": "^7.2.2",
         "react": "^16.0.0",
         "react-ga": "^3.3.0"
     },
