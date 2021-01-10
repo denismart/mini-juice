@@ -17,6 +17,8 @@ export default [
             'eruda',
             'react-ga',
             '@vkontakte/vk-bridge',
+            'konva',
+            'react',
         ],
     },
 ];
