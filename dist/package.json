@@ -1,12 +1,12 @@
 {
     "name": "mini-juice",
-    "version": "0.5.4",
+    "version": "0.5.5",
     "description": "Now you can",
     "author": "denismart",
     "license": "MIT",
     "repository": "denismart/mini-juice",
     "scripts": {
-        "build": "yarn prepare-folders && yarn test:jest && rm -rf ./dist && rollup --config",
+        "build": "yarn prepare-folders && yarn test:lint && yarn test:jest && rm -rf ./dist && rollup --config",
         "build:dev": "rm -rf ./dist && yarn prepare-folders && rollup --config",
         "publish-it": "yarn build && cp -r ./src/components ./dist && cp package.json ./dist && cp README.md ./dist && git add -f ./dist/package.json && yarn publish dist && cp ./dist/package.json . && git rm --cached ./dist/package.json",
         "test:lint": "eslint .",
@@ -19,8 +19,7 @@
         "eruda": "^2.4.1",
         "konva": "^7.2.2",
         "prop-types": "^15.7.2",
-        "react-ga": "^3.3.0",
-        "rollup-plugin-babel": "^4.4.0"
+        "react-ga": "^3.3.0"
     },
     "peerDependencies": {
         "react": "^16.0.0"
@@ -46,6 +45,8 @@
         "react-dom": "^16.13.1",
         "react-scripts": "^3.4.1",
         "rollup": "^2.36.1",
-        "rollup-plugin-multi-input": "^1.2.0"
+        "rollup-plugin-babel": "^4.4.0",
+        "rollup-plugin-multi-input": "^1.2.0",
+        "rollup-plugin-node-resolve": "^5.2.0"
     }
 }
