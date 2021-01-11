@@ -1,6 +1,6 @@
 {
     "name": "mini-juice",
-    "version": "0.5.5",
+    "version": "0.5.6",
     "description": "Now you can",
     "author": "denismart",
     "license": "MIT",
@@ -8,7 +8,7 @@
     "scripts": {
         "build": "yarn prepare-folders && yarn test:lint && yarn test:jest && rm -rf ./dist && rollup --config",
         "build:dev": "rm -rf ./dist && yarn prepare-folders && rollup --config",
-        "publish-it": "yarn build && cp -r ./src/components ./dist && cp package.json ./dist && cp README.md ./dist && git add -f ./dist/package.json && yarn publish dist && cp ./dist/package.json . && git rm --cached ./dist/package.json",
+        "publish-it": "yarn build && cp package.json ./dist && cp README.md ./dist && git add -f ./dist/package.json && yarn publish dist && cp ./dist/package.json . && git rm --cached ./dist/package.json",
         "test:lint": "eslint .",
         "test:jest": "jest --passWithNoTests",
         "peers-i": "install-peers -f",
