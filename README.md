@@ -10,10 +10,14 @@
 
 #### Пример импорта
 
-     import { secondsToTime } from 'mini-juice/common';
-     import secondsToTime from 'mini-juice/common/secondsToTime';
+    import { secondsToTime } from 'mini-juice/common';
+    import secondsToTime from 'mini-juice/common/secondsToTime';
 
-#### Документация: https://denismart.github.io/mini-juice
+---
+
+#### [Документация](https://denismart.github.io/mini-juice)
+
+---
 
 ## License
 
