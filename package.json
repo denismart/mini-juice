@@ -8,12 +8,12 @@
     "scripts": {
         "build": "yarn prepare-folders && yarn test:lint && yarn test:jest && rm -rf ./dist && rollup --config",
         "build:dev": "rm -rf ./dist && yarn prepare-folders && rollup --config",
-        "publish-it": "yarn build && cp package.json ./dist && cp README.md ./dist && git add -f ./dist/package.json && yarn publish dist && cp ./dist/package.json . && git rm --cached ./dist/package.json",
+        "publish-it": "yarn build && yarn docs && cp package.json ./dist && cp README.md ./dist && git add -f ./dist/package.json && yarn publish dist && cp ./dist/package.json . && git rm --cached ./dist/package.json",
         "test:lint": "eslint .",
         "test:jest": "jest --passWithNoTests",
         "peers-i": "install-peers -f",
         "prepare-folders": "node prepareFolderLists.js",
-		"docs": "rm -rf ./docs && jsdoc -r ./src -d ./docs"
+		"docs": "rm -rf ./docs && jsdoc -r README.md ./src -d ./docs"
     },
     "dependencies": {
         "@vkontakte/vk-bridge": "^2.3.0",
