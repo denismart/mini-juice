@@ -1,5 +1,5 @@
 /**
- * Проверяем режима прода
+ * Проверка режима прода
  * @param {boolean} forceProd - Вернуть прод.
  */
 const isProduction = (forceProd = false) => {

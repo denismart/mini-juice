@@ -1,7 +1,7 @@
 import isProduction from '../isProduction/index';
 
 /**
- * Проверяем режима прода
+ * Проверка режима прода
  * @param {boolean} forceDev - Вернуть прод.
  */
 const isDevelopment = (forceDev = false) => {

@@ -17,12 +17,14 @@ allSubdirs.forEach((subdir) => {
     const folder = Object.keys(subdir)[0];
     const functionsList = Object.values(subdir)[0];
 
-    let fileContent = '';
-    functionsList.forEach((file) => {
-        fileContent += `export { default as ${file} } from './${file}/index';\n`;
-    });
+    if (folder !== 'components') {
+        let fileContent = '';
+        functionsList.forEach((file) => {
+            fileContent += `export { default as ${file} } from './${file}/index';\n`;
+        });
 
-    if (fileContent !== '') {
-        fs.writeFileSync(`./src/${folder}/index.js`, fileContent);
+        if (fileContent !== '') {
+            fs.writeFileSync(`./src/${folder}/index.js`, fileContent);
+        }
     }
 });

@@ -1,9 +1,9 @@
 import Konva from 'konva';
 
 /**
- * Добавляем контейнер для рендера
+ * Загрузка картинки и создание Konva Image
  * @param {string} imageUrl - URL картинки.
- * @param {string | null} imageAlternateUrl - URL картинки на тот случай,
+ * @param {string | null} imageAlternateUrl - URL картинки на тот случай.
  * если загрузка первой потерпит неудачу.
  * @return {Promise}
  */
