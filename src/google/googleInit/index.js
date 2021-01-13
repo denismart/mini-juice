@@ -1,5 +1,6 @@
 import GA from 'react-ga';
-import googleEvent from '../googleEvent/index';
+import MINI from '../../locals/MINI';
+import googleEventInitApp from '../googleEventInitApp';
 
 /**
  * Инициализирует гугл аналитику и запускает первый евент
@@ -14,20 +15,20 @@ const googleInit = (code, isHardInit = true, isStartEvent = true, debug = false)
             gaOptions: {
                 cookieDomain: 'none',
                 cookieFlags: 'SameSite=None; Secure',
-                debug,
             },
+            debug,
         });
         GA.set('checkProtocolTask', null);
     } else {
         GA.initialize('UA-185334757-4', {
-            gaOptions: {
-                debug,
-            },
+            debug,
         });
     }
 
+    MINI.GOOGLE_INITIALIZED = true;
+
     if (isStartEvent) {
-        googleEvent('main', 'init');
+        googleEventInitApp();
     }
 };
 

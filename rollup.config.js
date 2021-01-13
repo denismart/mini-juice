@@ -1,11 +1,11 @@
 import multiInput from 'rollup-plugin-multi-input';
-import babel from '@rollup/plugin-babel';
-import replace from '@rollup/plugin-replace';
-import { uglify } from 'rollup-plugin-uglify';
+import commonjs from '@rollup/plugin-commonjs';
+import resolve from 'rollup-plugin-node-resolve';
+import babel from 'rollup-plugin-babel';
 
 export default [
     {
-        input: ['src/**/*[!.test].js'],
+        input: ['src/!(components)/**/*[!.test].js'],
         output: {
             format: 'cjs',
             dir: 'dist',
@@ -13,32 +13,41 @@ export default [
         },
         plugins: [
             multiInput(),
-            replace({
-                exclude: 'node_modules/**',
-                'process.env.NODE_ENV': process.env.NODE_ENV || JSON.stringify('production'),
-                'process.env.REACT_APP_PROD_STATUS': process.env.REACT_APP_PROD_STATUS || JSON.stringify('none'),
-            }),
+            commonjs(),
+        ],
+        external: [
+            'eruda',
+            'react-ga',
+            '@vkontakte/vk-bridge',
+            'konva',
+            'react',
+            'prop-types',
         ],
     },
     {
-        input: ['src/**/*[!.test].js'],
+        input: ['src/components/index.js'],
         output: {
             format: 'cjs',
-            dir: 'dist/min',
+            dir: 'dist/components',
             exports: 'auto',
         },
         plugins: [
-            multiInput(),
-            replace({
-                exclude: 'node_modules/**',
-                'process.env.NODE_ENV': process.env.NODE_ENV || JSON.stringify('production'),
-                'process.env.REACT_APP_PROD_STATUS': process.env.REACT_APP_PROD_STATUS || JSON.stringify('none'),
-            }),
+            resolve(
+                { extensions: ['.js', '.jsx'] },
+            ),
             babel({
-                babelHelpers: 'external',
                 exclude: 'node_modules/**',
+                presets: ['@babel/env', '@babel/preset-react'],
             }),
-            uglify(),
+            commonjs(),
+        ],
+        external: [
+            'eruda',
+            'react-ga',
+            '@vkontakte/vk-bridge',
+            'konva',
+            'react',
+            'prop-types',
         ],
     },
 ];

@@ -1,4 +1,5 @@
 import GA from 'react-ga';
+import MINI from '../../locals/MINI';
 
 /**
  * Посылает событие в гугл аналитику
@@ -8,12 +9,14 @@ import GA from 'react-ga';
  * @param {number} value - Значение события.
  */
 const googleEvent = (category, action, label = undefined, value = undefined) => {
-    GA.event({
-        category,
-        action,
-        label,
-        value,
-    });
+    if (MINI.GOOGLE_INITIALIZED) {
+        GA.event({
+            category,
+            action,
+            label,
+            value,
+        });
+    }
 };
 
 export default googleEvent;

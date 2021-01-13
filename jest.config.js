@@ -1,6 +1,6 @@
 module.exports = {
     clearMocks: true,
-    testEnvironment: 'node',
+    testEnvironment: 'jsdom',
     testMatch: ['**/?(*.)+(spec|test).[tj]s?(x)'],
     testPathIgnorePatterns: ['/node_modules/', '/dist/'],
 };
