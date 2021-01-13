@@ -5,6 +5,7 @@ export { default as erudaInit } from './erudaInit/index';
 export { default as formatDateToMysql } from './formatDateToMysql/index';
 export { default as getAnimationEndEvent } from './getAnimationEndEvent/index';
 export { default as isDevelopment } from './isDevelopment/index';
+export { default as isLast } from './isLast/index';
 export { default as isProduction } from './isProduction/index';
 export { default as isScreenGreater } from './isScreenGreater/index';
 export { default as isScreenGreaterOrEqual } from './isScreenGreaterOrEqual/index';

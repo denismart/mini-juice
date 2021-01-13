@@ -1,5 +1,5 @@
 import Konva from 'konva';
-import { konvaWidth } from '../index';
+import konvaWidth from '../konvaWidth';
 import isLast from '../../common/isLast';
 
 /**
@@ -25,7 +25,6 @@ const konvaFillHorizontal = (elements, space, isEdges = false, isEdgesHalf = fal
         filledGroup.add(element);
 
         offsetX += konvaWidth(element) + space;
-
         totalWidth += konvaWidth(element);
         totalWidth += isLast(elements, num) ? edgeSpace : space;
     });

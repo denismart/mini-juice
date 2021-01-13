@@ -4,7 +4,7 @@ import devLog from '../../common/devLog';
 
 /**
  * Получаем токен пользователя ВК и сразу записываем его в случае успеха
- * @param {array, string} scope - Массив прав
+ * @param {array | string} scope - Массив прав.
  * @return {Promise}
  */
 const bridgeGetAccessTokenAndSave = (scope = []) => bridgeGetAccessToken(scope)

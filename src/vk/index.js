@@ -6,10 +6,12 @@ export { default as bridgeGetStorageFormatted } from './bridgeGetStorageFormatte
 export { default as bridgeInitApp } from './bridgeInitApp/index';
 export { default as bridgeSetStatusBar } from './bridgeSetStatusBar/index';
 export { default as bridgeSetStorage } from './bridgeSetStorage/index';
+export { default as bridgeShareStory } from './bridgeShareStory/index';
 export { default as bridgeShowInterstitialAd } from './bridgeShowInterstitialAd/index';
 export { default as bridgeShowRewardAd } from './bridgeShowRewardAd/index';
 export { default as bridgeTurnOffNotifications } from './bridgeTurnOffNotifications/index';
 export { default as bridgeTurnOnNotifications } from './bridgeTurnOnNotifications/index';
+export { default as getAppHash } from './getAppHash/index';
 export { default as getAppId } from './getAppId/index';
 export { default as getAppLang } from './getAppLang/index';
 export { default as getAppPlatform } from './getAppPlatform/index';
