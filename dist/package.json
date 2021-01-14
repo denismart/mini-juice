@@ -1,6 +1,6 @@
 {
     "name": "mini-juice",
-    "version": "0.7.4",
+    "version": "0.7.5",
     "description": "Now you can",
     "author": "denismart",
     "license": "MIT",
@@ -20,6 +20,7 @@
         "eruda": "^2.4.1",
         "jsdoc": "^3.6.6",
         "konva": "^7.2.2",
+        "moment": "^2.29.1",
         "prop-types": "^15.7.2",
         "react-ga": "^3.3.0"
     },
