@@ -11,8 +11,8 @@ import googleEventShareStoryFail from '../../google/googleEventShareStoryFail';
  * @param {Object} params - Дополнительные параметры.
  * @return {Promise}
  */
-const bridgeShareToStory = (base64Image, params = {}) => {
-    if (MINI.VK_AUTO_GOOGLE_EVENTS_SHARE) {
+const bridgeShareToStoryWithOpen = (base64Image, openButton, params = {}) => {
+    if (MINI.GOOGLE_INITIALIZED && MINI.VK_AUTO_GOOGLE_EVENTS_SHARE) {
         googleEventShareStoryTotal();
     }
 
@@ -27,14 +27,14 @@ const bridgeShareToStory = (base64Image, params = {}) => {
         },
         ...params,
     }).then(() => {
-        if (MINI.VK_AUTO_GOOGLE_EVENTS_SHARE) {
+        if (MINI.GOOGLE_INITIALIZED && MINI.VK_AUTO_GOOGLE_EVENTS_SHARE) {
             googleEventShareStorySuccess();
         }
     }).catch(() => {
-        if (MINI.VK_AUTO_GOOGLE_EVENTS_SHARE) {
+        if (MINI.GOOGLE_INITIALIZED && MINI.VK_AUTO_GOOGLE_EVENTS_SHARE) {
             googleEventShareStoryFail();
         }
     });
 };
 
-export default bridgeShareToStory;
+export default bridgeShareToStoryWithOpen;
