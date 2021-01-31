@@ -22,6 +22,9 @@ export default [
             'konva',
             'react',
             'prop-types',
+            'moment',
+            'axios',
+            'crypto-js',
         ],
     },
     {
@@ -48,6 +51,9 @@ export default [
             'konva',
             'react',
             'prop-types',
+            'moment',
+            'axios',
+            'crypto-js',
         ],
     },
 ];

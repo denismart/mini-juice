@@ -17,7 +17,7 @@ allSubdirs.forEach((subdir) => {
     const folder = Object.keys(subdir)[0];
     const functionsList = Object.values(subdir)[0];
 
-    if (folder !== 'components') {
+    if (folder !== '') {
         let fileContent = '';
         functionsList.forEach((file) => {
             fileContent += `export { default as ${file} } from './${file}/index';\n`;

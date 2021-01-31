@@ -1,6 +1,6 @@
 {
     "name": "mini-juice",
-    "version": "0.7.0",
+    "version": "0.8.0",
     "description": "Now you can",
     "author": "denismart",
     "license": "MIT",
@@ -13,13 +13,16 @@
         "test:jest": "jest --passWithNoTests",
         "peers-i": "install-peers -f",
         "prepare-folders": "node prepareFolderLists.js",
-		"docs": "rm -rf ./docs && jsdoc -r README.md ./src -d ./docs"
+        "docs": "rm -rf ./docs && jsdoc -r README.md ./src -d ./docs"
     },
     "dependencies": {
         "@vkontakte/vk-bridge": "^2.3.0",
+        "axios": "^0.21.1",
+        "crypto-js": "^4.0.0",
         "eruda": "^2.4.1",
         "jsdoc": "^3.6.6",
         "konva": "^7.2.2",
+        "moment": "^2.29.1",
         "prop-types": "^15.7.2",
         "react-ga": "^3.3.0"
     },

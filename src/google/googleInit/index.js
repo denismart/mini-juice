@@ -11,7 +11,7 @@ import googleEventInitApp from '../googleEventInitApp';
  */
 const googleInit = (code, isHardInit = true, isStartEvent = true, debug = false) => {
     if (isHardInit) {
-        GA.initialize('UA-185334757-4', {
+        GA.initialize(code, {
             gaOptions: {
                 cookieDomain: 'none',
                 cookieFlags: 'SameSite=None; Secure',
@@ -20,7 +20,7 @@ const googleInit = (code, isHardInit = true, isStartEvent = true, debug = false)
         });
         GA.set('checkProtocolTask', null);
     } else {
-        GA.initialize('UA-185334757-4', {
+        GA.initialize(code, {
             debug,
         });
     }
