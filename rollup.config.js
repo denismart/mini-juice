@@ -25,6 +25,7 @@ export default [
             'moment',
             'axios',
             'crypto-js',
+            'crypto-js/md5',
         ],
     },
     {
@@ -54,6 +55,7 @@ export default [
             'moment',
             'axios',
             'crypto-js',
+            'crypto-js/md5',
         ],
     },
 ];
