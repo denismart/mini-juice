@@ -8,9 +8,9 @@ import devLog from '../../common/devLog';
  * @return {Promise}
  */
 const bridgeGetAccessTokenAndSave = (scope = []) => bridgeGetAccessToken(scope)
-    .then((accessToken) => {
-        setVkAccessToken(accessToken);
-        return accessToken;
+    .then((response) => {
+        setVkAccessToken(response.access_token);
+        return response.access_token;
     })
     .catch((error) => {
         devLog(error);

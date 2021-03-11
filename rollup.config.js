@@ -26,6 +26,7 @@ export default [
             'axios',
             'crypto-js',
             'crypto-js/md5',
+            'react-router',
         ],
     },
     {
@@ -56,6 +57,7 @@ export default [
             'axios',
             'crypto-js',
             'crypto-js/md5',
+            'react-router',
         ],
     },
 ];

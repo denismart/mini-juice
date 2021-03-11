@@ -1,4 +1,5 @@
 export { default as chunks } from './chunks/index';
+export { default as copy } from './copy/index';
 export { default as dayNow } from './dayNow/index';
 export { default as devLog } from './devLog/index';
 export { default as equal } from './equal/index';
@@ -42,5 +43,6 @@ export { default as timeLogStart } from './timeLogStart/index';
 export { default as useEffectNext } from './useEffectNext/index';
 export { default as useEruda } from './useEruda/index';
 export { default as useEventListener } from './useEventListener/index';
+export { default as usePath } from './usePath/index';
 export { default as wordCase } from './wordCase/index';
 export { default as yearNow } from './yearNow/index';
