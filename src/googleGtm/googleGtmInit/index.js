@@ -1,3 +1,5 @@
+import prepareUtm from '../../vk/prepareUtm';
+
 /**
  * Инициализирует гугл тег, необходимо вставить как можно раньше
  * @param {string} gtmCode - Код гугл тега.
@@ -6,6 +8,8 @@
  * @return {Promise}
  */
 const googleGtmInit = async (gtmCode, dataLayer = 'dataLayer', actionAfterLoad = () => {}) => new Promise((resolve) => {
+    prepareUtm();
+
     window[dataLayer] = window[dataLayer] || [];
     window[dataLayer].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
     const head = document.getElementsByTagName('head')[0];
