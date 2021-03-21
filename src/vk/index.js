@@ -29,6 +29,7 @@ export { default as isMobile } from './isMobile/index';
 export { default as isMobileAndroid } from './isMobileAndroid/index';
 export { default as isMobileIphone } from './isMobileIphone/index';
 export { default as isMobileWeb } from './isMobileWeb/index';
+export { default as prepareUtm } from './prepareUtm/index';
 export { default as randomizeRequestId } from './randomizeRequestId/index';
 export { default as showBridgeResult } from './showBridgeResult/index';
 export { default as vkStat } from './vkStat/index';

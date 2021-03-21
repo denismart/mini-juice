@@ -6,12 +6,13 @@ import devLog from '../../common/devLog';
  * Получение данных из Storage
  * @param {string} category - Название категории.
  * @param {string} action - Название действия.
+ * @param {string} label - Название метки.
  * @param {string} delimiter - Разделитель для статы VK.
  * @param {boolean} isDebug - режим отладки.
  */
-const vkStat = async (category, action, delimiter = '--', isDebug = false) => {
-    const googleGtmEventResult = googleGtmEvent(category, action);
-    const bridgeStatEventResult = await bridgeStatEvent(`${category}${delimiter}${action}`)
+const vkStat = async (category, action, label = undefined, delimiter = '--', isDebug = false) => {
+    const googleGtmEventResult = googleGtmEvent(category, action, label);
+    const bridgeStatEventResult = await bridgeStatEvent(`${category}${delimiter}${action}${delimiter}${label}`)
         .catch((error) => console.log(error));
 
     devLog('-------------', isDebug);
