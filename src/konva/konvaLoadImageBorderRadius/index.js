@@ -10,7 +10,7 @@ import calcBorderRadiusFunc from '../calcBorderRadiusFunc';
  * @param {Object} groupParams - Параметры для группы, в которую добавляется картинка.
  * @param {string | null} imageAlternateUrl - URL картинки на тот случай.
  * если загрузка первой потерпит неудачу.
- * @return {Promise}
+ * @return {Group}
  */
 const loadKonvaImageWithBorders = async (
     imageUrl,

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: google/googleEventShareStoryTotal/index.js</title>
+    <title>JSDoc: Source: konva/calcCircleFunc/index.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: google/googleEventShareStoryTotal/index.js</h1>
+    <h1 class="page-title">Source: konva/calcCircleFunc/index.js</h1>
 
     
 
@@ -26,14 +26,19 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import googleEventShare from '../googleEventShare';
-
-/**
- * Посылает событие в гугл аналитику
+            <pre class="prettyprint source linenums"><code>/**
+ * Рассчитать ctx для круга
+ * @param {Object} ctx - Контектс.
+ * @param {number} radius - Радиус.
+ * @param {number} x - Позиция по X.
+ * @param {number} y - Позиция по Y.
+ * @return {Promise}
  */
-const googleEventShareStoryTotal = () => googleEventShare('story-total');
+const calcCircleFunc = (ctx, radius, x, y) => {
+    ctx.arc(x + radius / 2, y + radius / 2, radius / 2, 0, Math.PI * 2, false);
+};
 
-export default googleEventShareStoryTotal;
+export default calcCircleFunc;
 </code></pre>
         </article>
     </section>

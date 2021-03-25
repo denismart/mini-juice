@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: google/googleEventShareStoryTotal/index.js</title>
+    <title>JSDoc: Source: konva/konvaLoadImageCircle/index.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: google/googleEventShareStoryTotal/index.js</h1>
+    <h1 class="page-title">Source: konva/konvaLoadImageCircle/index.js</h1>
 
     
 
@@ -26,14 +26,51 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import googleEventShare from '../googleEventShare';
+            <pre class="prettyprint source linenums"><code>import Konva from 'konva';
+import konvaLoadImage from '../konvaLoadImage';
+import calcCircleFunc from '../calcCircleFunc';
 
 /**
- * Посылает событие в гугл аналитику
+ * Загрузка картинки и создание круглого Konva Image
+ * @param {string} imageUrl - URL картинки.
+ * @param {number} radius - Радиус картинки на выходе.
+ * @param {Object} imageParams - Параметры для картинки.
+ * @param {Object} groupParams - Параметры для группы, в которую добавляется картинка.
+ * @param {string | null} imageAlternateUrl - URL картинки на тот случай.
+ * если загрузка первой потерпит неудачу.
+ * @return {Group}
  */
-const googleEventShareStoryTotal = () => googleEventShare('story-total');
+const konvaLoadImageCircle = async (
+    imageUrl,
+    radius,
+    imageParams = {},
+    groupParams = {},
+    imageAlternateUrl = null,
+) => {
+    const image = await konvaLoadImage(imageUrl, imageAlternateUrl);
 
-export default googleEventShareStoryTotal;
+    if (!image) {
+        return null;
+    }
+
+    const realRadius = (radius || image.width());
+
+    image.setAttrs({
+        width: realRadius,
+        height: realRadius,
+        ...imageParams,
+    });
+
+    const group = new Konva.Group({
+        clipFunc: (ctx) => calcCircleFunc(ctx, realRadius, 0, 0),
+        ...groupParams,
+    });
+    group.add(image);
+
+    return group;
+};
+
+export default konvaLoadImageCircle;
 </code></pre>
         </article>
     </section>

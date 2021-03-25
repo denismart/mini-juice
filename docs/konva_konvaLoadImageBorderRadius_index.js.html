@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: google/googleEventShareStoryTotal/index.js</title>
+    <title>JSDoc: Source: konva/konvaLoadImageBorderRadius/index.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: google/googleEventShareStoryTotal/index.js</h1>
+    <h1 class="page-title">Source: konva/konvaLoadImageBorderRadius/index.js</h1>
 
     
 
@@ -26,14 +26,53 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import googleEventShare from '../googleEventShare';
+            <pre class="prettyprint source linenums"><code>import Konva from 'konva';
+import konvaLoadImage from '../konvaLoadImage';
+import calcBorderRadiusFunc from '../calcBorderRadiusFunc';
 
 /**
- * Посылает событие в гугл аналитику
+ * Загрузка картинки с закругленными краями и создание Konva Group
+ * @param {string} imageUrl - URL картинки.
+ * @param {number} borderRadius - Радиус скругления картинки.
+ * @param {Object} imageParams - Параметры для картинки.
+ * @param {Object} groupParams - Параметры для группы, в которую добавляется картинка.
+ * @param {string | null} imageAlternateUrl - URL картинки на тот случай.
+ * если загрузка первой потерпит неудачу.
+ * @return {Group}
  */
-const googleEventShareStoryTotal = () => googleEventShare('story-total');
+const loadKonvaImageWithBorders = async (
+    imageUrl,
+    borderRadius,
+    imageParams = {},
+    groupParams = {},
+    imageAlternateUrl = null,
+) => {
+    const image = await konvaLoadImage(imageUrl, imageAlternateUrl);
+    if (!image) {
+        return null;
+    }
 
-export default googleEventShareStoryTotal;
+    image.setAttrs({
+        ...imageParams,
+    });
+
+    const group = new Konva.Group({
+        clipFunc: (ctx) => calcBorderRadiusFunc(
+            ctx,
+            0,
+            0,
+            image.width(),
+            image.height(),
+            borderRadius,
+        ),
+        ...groupParams,
+    });
+    group.add(image);
+
+    return group;
+};
+
+export default loadKonvaImageWithBorders;
 </code></pre>
         </article>
     </section>

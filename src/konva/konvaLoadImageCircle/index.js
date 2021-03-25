@@ -10,7 +10,7 @@ import calcCircleFunc from '../calcCircleFunc';
  * @param {Object} groupParams - Параметры для группы, в которую добавляется картинка.
  * @param {string | null} imageAlternateUrl - URL картинки на тот случай.
  * если загрузка первой потерпит неудачу.
- * @return {Promise}
+ * @return {Group}
  */
 const konvaLoadImageCircle = async (
     imageUrl,
@@ -34,7 +34,7 @@ const konvaLoadImageCircle = async (
     });
 
     const group = new Konva.Group({
-        clipFunc: (ctx) => calcCircleFunc(ctx, 0, 0, realRadius),
+        clipFunc: (ctx) => calcCircleFunc(ctx, realRadius, 0, 0),
         ...groupParams,
     });
     group.add(image);
