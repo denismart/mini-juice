@@ -4,6 +4,7 @@ const MINI = {
     GOOGLE_INITIALIZED: false,
     VK_AUTO_GOOGLE_EVENTS_SHARE: true,
     VK_AUTO_GOOGLE_EVENTS_SHOW_AD: true,
+    ERUDA_INIT: false,
 };
 
 export default MINI;

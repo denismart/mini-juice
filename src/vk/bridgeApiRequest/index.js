@@ -3,7 +3,7 @@ import randomizeRequestId from '../randomizeRequestId/index';
 import MINI from '../../locals/MINI/index';
 
 /**
- * Устанавливаем статус бар
+ * Вызов метода АПИ
  * @return {Promise}
  */
 const bridgeApiRequest = (

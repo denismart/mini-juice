@@ -4,6 +4,6 @@
  * @param {number} max - До.
  * @return {number}
  */
-const randomInt = (min, max) => min + Math.floor((max - min) * Math.random());
+const randomInt = (min, max) => Math.floor(min + Math.random() * (max + 1 - min));
 
 export default randomInt;

@@ -1,5 +1,4 @@
 import vkBridge from '@vkontakte/vk-bridge';
-import getAppId from '../getAppId';
 import MINI from '../../locals/MINI';
 import googleEventShareStoryTotal from '../../google/googleEventShareStoryTotal';
 import googleEventShareStorySuccess from '../../google/googleEventShareStorySuccess';
@@ -11,8 +10,8 @@ import googleEventShareStoryFail from '../../google/googleEventShareStoryFail';
  * @param {Object} params - Дополнительные параметры.
  * @return {Promise}
  */
-const bridgeShareToStory = (base64Image, params = {}) => {
-    if (MINI.VK_AUTO_GOOGLE_EVENTS_SHARE) {
+const bridgeShareStory = (base64Image, params = {}) => {
+    if (MINI.GOOGLE_INITIALIZED && MINI.VK_AUTO_GOOGLE_EVENTS_SHARE) {
         googleEventShareStoryTotal();
     }
 
@@ -20,14 +19,9 @@ const bridgeShareToStory = (base64Image, params = {}) => {
         background_type: 'image',
         locked: true,
         blob: base64Image,
-        attachment: {
-            text: 'open',
-            type: 'url',
-            url: `https://vk.com/app${getAppId()}`,
-        },
         ...params,
     }).then(() => {
-        if (MINI.VK_AUTO_GOOGLE_EVENTS_SHARE) {
+        if (MINI.GOOGLE_INITIALIZED && MINI.VK_AUTO_GOOGLE_EVENTS_SHARE) {
             googleEventShareStorySuccess();
         }
     }).catch(() => {
@@ -37,4 +31,4 @@ const bridgeShareToStory = (base64Image, params = {}) => {
     });
 };
 
-export default bridgeShareToStory;
+export default bridgeShareStory;

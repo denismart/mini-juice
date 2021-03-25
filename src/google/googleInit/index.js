@@ -1,6 +1,7 @@
 import GA from 'react-ga';
 import MINI from '../../locals/MINI';
 import googleEventInitApp from '../googleEventInitApp';
+import prepareUtm from '../../vk/prepareUtm';
 
 /**
  * Инициализирует гугл аналитику и запускает первый евент
@@ -10,8 +11,10 @@ import googleEventInitApp from '../googleEventInitApp';
  * @param {boolean} debug - Режим отладки.
  */
 const googleInit = (code, isHardInit = true, isStartEvent = true, debug = false) => {
+    prepareUtm();
+
     if (isHardInit) {
-        GA.initialize('UA-185334757-4', {
+        GA.initialize(code, {
             gaOptions: {
                 cookieDomain: 'none',
                 cookieFlags: 'SameSite=None; Secure',
@@ -20,7 +23,7 @@ const googleInit = (code, isHardInit = true, isStartEvent = true, debug = false)
         });
         GA.set('checkProtocolTask', null);
     } else {
-        GA.initialize('UA-185334757-4', {
+        GA.initialize(code, {
             debug,
         });
     }

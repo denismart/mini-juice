@@ -22,6 +22,11 @@ export default [
             'konva',
             'react',
             'prop-types',
+            'moment',
+            'axios',
+            'crypto-js',
+            'crypto-js/md5',
+            'react-router',
         ],
     },
     {
@@ -48,6 +53,11 @@ export default [
             'konva',
             'react',
             'prop-types',
+            'moment',
+            'axios',
+            'crypto-js',
+            'crypto-js/md5',
+            'react-router',
         ],
     },
 ];
