@@ -8,9 +8,11 @@ import getAppPlatform from '../getAppPlatform';
  * @param {string} screen - Экран на котором происходит.
  * @param {Object} json - Действие после загрузки.
  * @param {Object} params - Другие параметры.
+ * @param {string} accessToken - VK Токен.
+ * @param {string} version - Версия АПИ.
  * @return {Promise}
  */
-const bridgeStatEvent = async (event, screen = '', json = {}, params = {}) => bridgeApiRequest('statEvents.addMiniApps', {
+const bridgeStatEvent = async (event, screen = '', json = {}, params = {}, accessToken, version) => bridgeApiRequest('statEvents.addMiniApps', {
     events: JSON.stringify([{
         type: 'type_navgo',
         type_navgo: {
@@ -26,6 +28,6 @@ const bridgeStatEvent = async (event, screen = '', json = {}, params = {}) => br
         json: JSON.stringify(json),
         ...params,
     }]),
-});
+}, accessToken, version);
 
 export default bridgeStatEvent;

@@ -960,6 +960,363 @@
     
 
     
+    <h4 class="name" id="bridgeCloseApp"><span class="type-signature"></span>bridgeCloseApp<span class="signature">(status, payload)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Закрываем приложение ВК
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>status</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Статус закрытия (failed или success),
+передается в родительское приложение.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>payload</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Данные, передаваемые в родительское приложение.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="vk_bridgeCloseApp_index.js.html">vk/bridgeCloseApp/index.js</a>, <a href="vk_bridgeCloseApp_index.js.html#line10">line 10</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="bridgeDownloadFile"><span class="type-signature"></span>bridgeDownloadFile<span class="signature">(url, filename)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Скачиваем файл на устройство
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>url</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">URL файла, либо его data uri,</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>filename</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Имя файла.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="vk_bridgeDownloadFile_index.js.html">vk/bridgeDownloadFile/index.js</a>, <a href="vk_bridgeDownloadFile_index.js.html#line9">line 9</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
     <h4 class="name" id="bridgeGetAccessToken"><span class="type-signature"></span>bridgeGetAccessToken<span class="signature">(scope)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
     
 
@@ -2466,6 +2823,199 @@
     
 
     
+    <h4 class="name" id="bridgeShowImages"><span class="type-signature"></span>bridgeShowImages<span class="signature">(images, startIndex)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Показать картинки в специальном окне
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>images</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+|
+
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">Картинка или массив картинок.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>startIndex</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    0
+                
+                </td>
+            
+
+            <td class="description last">С какого индекса открыть картинку.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="vk_bridgeShowImages_index.js.html">vk/bridgeShowImages/index.js</a>, <a href="vk_bridgeShowImages_index.js.html#line9">line 9</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
     <h4 class="name" id="bridgeShowInterstitialAd"><span class="type-signature"></span>bridgeShowInterstitialAd<span class="signature">()</span><span class="type-signature"> &rarr; {Promise}</span></h4>
     
 
@@ -2678,7 +3228,7 @@
     
 
     
-    <h4 class="name" id="bridgeStatEvent"><span class="type-signature">(async) </span>bridgeStatEvent<span class="signature">(event, screen, json, params)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id="bridgeStatEvent"><span class="type-signature">(async) </span>bridgeStatEvent<span class="signature">(event, screen, json, params, accessToken, version)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
     
 
     
@@ -2811,6 +3361,52 @@
         </tr>
 
     
+
+        <tr>
+            
+                <td class="name"><code>accessToken</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">VK Токен.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>version</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Версия АПИ.</td>
+        </tr>
+
+    
     </tbody>
 </table>
 
@@ -2848,7 +3444,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="vk_bridgeStatEvent_index.js.html">vk/bridgeStatEvent/index.js</a>, <a href="vk_bridgeStatEvent_index.js.html#line13">line 13</a>
+        <a href="vk_bridgeStatEvent_index.js.html">vk/bridgeStatEvent/index.js</a>, <a href="vk_bridgeStatEvent_index.js.html#line15">line 15</a>
     </li></ul></dd>
     
 
@@ -3263,6 +3859,307 @@
 
 
 
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="bridgeSubscribeTheme"><span class="type-signature"></span>bridgeSubscribeTheme<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Подписываемся на отлов события изменения темы
+и меняем тему
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="vk_bridgeSubscribeTheme_index.js.html">vk/bridgeSubscribeTheme/index.js</a>, <a href="vk_bridgeSubscribeTheme_index.js.html#line7">line 7</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="bridgeSwipeDisable"><span class="type-signature"></span>bridgeSwipeDisable<span class="signature">()</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Выключает свайпы
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="vk_bridgeSwipeDisable_index.js.html">vk/bridgeSwipeDisable/index.js</a>, <a href="vk_bridgeSwipeDisable_index.js.html#line7">line 7</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="bridgeSwipeEnable"><span class="type-signature"></span>bridgeSwipeEnable<span class="signature">()</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Включает свайпы
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="vk_bridgeSwipeEnable_index.js.html">vk/bridgeSwipeEnable/index.js</a>, <a href="vk_bridgeSwipeEnable_index.js.html#line7">line 7</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
 
 
 
@@ -3751,6 +4648,196 @@
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
         <a href="vk_bridgeVibrationMedium_index.js.html">vk/bridgeVibrationMedium/index.js</a>, <a href="vk_bridgeVibrationMedium_index.js.html#line7">line 7</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="bridgeVkPay"><span class="type-signature"></span>bridgeVkPay<span class="signature">(action, params)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Открыть окно оплаты VK Pay
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>action</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    pay-to-service
+                
+                </td>
+            
+
+            <td class="description last">Тип перевода.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">Дополнительные параметры.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="vk_bridgeVkPay_index.js.html">vk/bridgeVkPay/index.js</a>, <a href="vk_bridgeVkPay_index.js.html#line10">line 10</a>
     </li></ul></dd>
     
 
@@ -4306,7 +5393,7 @@
 
 
 <div class="description">
-    Получить число текущей даты
+    Поделить массив на части и вернуть массив частей
 </div>
 
 
@@ -4689,7 +5776,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="common_dayNow_index.js.html">common/dayNow/index.js</a>, <a href="common_dayNow_index.js.html#line7">line 7</a>
+        <a href="date_dayNow_index.js.html">date/dayNow/index.js</a>, <a href="date_dayNow_index.js.html#line7">line 7</a>
     </li></ul></dd>
     
 
@@ -5169,6 +6256,187 @@
 
 
 
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="downloadBlob"><span class="type-signature"></span>downloadBlob<span class="signature">(blob, filename)</span><span class="type-signature"> &rarr; {Array|Object}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Копирует массив или объект
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>blob</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Строка Blob.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>filename</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Имя файла без расширения.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="common_downloadBlob_index.js.html">common/downloadBlob/index.js</a>, <a href="common_downloadBlob_index.js.html#line7">line 7</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array</span>
+|
+
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
 
 
 
@@ -10249,7 +11517,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="common_hourNow_index.js.html">common/hourNow/index.js</a>, <a href="common_hourNow_index.js.html#line7">line 7</a>
+        <a href="date_hourNow_index.js.html">date/hourNow/index.js</a>, <a href="date_hourNow_index.js.html#line7">line 7</a>
     </li></ul></dd>
     
 
@@ -10543,6 +11811,218 @@
 
 
 
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="isInternetOnline"><span class="type-signature"></span>isInternetOnline<span class="signature">()</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Проверяет есть ли соединение с интернетом
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="common_isInternetOnline_index.js.html">common/isInternetOnline/index.js</a>, <a href="common_isInternetOnline_index.js.html#line5">line 5</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="isIosApp"><span class="type-signature"></span>isIosApp<span class="signature">()</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Проверить, что открыто через приложение на телефоне или айпаде
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="vk_isIosApp_index.js.html">vk/isIosApp/index.js</a>, <a href="vk_isIosApp_index.js.html#line9">line 9</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
 
 
 
@@ -10944,6 +12424,324 @@
     
 
     
+    <h4 class="name" id="isMobileAndroidMessenger"><span class="type-signature"></span>isMobileAndroidMessenger<span class="signature">()</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Проверить, что открыто официальное приложение-мессенджер для Android
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="vk_isMobileAndroidMessenger_index.js.html">vk/isMobileAndroidMessenger/index.js</a>, <a href="vk_isMobileAndroidMessenger_index.js.html#line7">line 7</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="isMobileApp"><span class="type-signature"></span>isMobileApp<span class="signature">()</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Проверить, что открыто через любое приложение на телефоне
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="vk_isMobileApp_index.js.html">vk/isMobileApp/index.js</a>, <a href="vk_isMobileApp_index.js.html#line8">line 8</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="isMobileIpad"><span class="type-signature"></span>isMobileIpad<span class="signature">()</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Проверить, что открыта браузерная мобильная версия
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="vk_isMobileIpad_index.js.html">vk/isMobileIpad/index.js</a>, <a href="vk_isMobileIpad_index.js.html#line7">line 7</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
     <h4 class="name" id="isMobileIphone"><span class="type-signature"></span>isMobileIphone<span class="signature">()</span><span class="type-signature"> &rarr; {boolean}</span></h4>
     
 
@@ -10997,6 +12795,324 @@
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
         <a href="vk_isMobileIphone_index.js.html">vk/isMobileIphone/index.js</a>, <a href="vk_isMobileIphone_index.js.html#line7">line 7</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="isMobileIphoneMessenger"><span class="type-signature"></span>isMobileIphoneMessenger<span class="signature">()</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Проверить, что открыто официальное приложение для iPhone
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="vk_isMobileIphoneMessenger_index.js.html">vk/isMobileIphoneMessenger/index.js</a>, <a href="vk_isMobileIphoneMessenger_index.js.html#line7">line 7</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="isMobileMessenger"><span class="type-signature"></span>isMobileMessenger<span class="signature">()</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Проверить, что открыто через приложение-мессенджер на телефоне
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="vk_isMobileMessenger_index.js.html">vk/isMobileMessenger/index.js</a>, <a href="vk_isMobileMessenger_index.js.html#line8">line 8</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="isMobileVkApp"><span class="type-signature"></span>isMobileVkApp<span class="signature">()</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Проверить, что открыто через приложение клиент ВК на телефоне
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="vk_isMobileVkApp_index.js.html">vk/isMobileVkApp/index.js</a>, <a href="vk_isMobileVkApp_index.js.html#line8">line 8</a>
     </li></ul></dd>
     
 
@@ -12148,6 +14264,391 @@
 
 
 
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="isset"><span class="type-signature"></span>isset<span class="signature">(object, path)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Проверить существует ли структура объекта
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>object</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Объект, который необходимо проверить.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>path</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+|
+
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Структура которую надо првоерить на существование.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="common_isset_index.js.html">common/isset/index.js</a>, <a href="common_isset_index.js.html#line9">line 9</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="issetGet"><span class="type-signature"></span>issetGet<span class="signature">(object, path, defaultValue)</span><span class="type-signature"> &rarr; {*}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Проверить существует ли структура объекта и получить результат
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>object</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Объект, который необходимо проверить.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>path</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+|
+
+<span class="param-type">array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Структура которую надо првоерить на существование и вернуть.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>defaultValue</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Структура которую надо првоерить на существование.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="common_issetGet_index.js.html">common/issetGet/index.js</a>, <a href="common_issetGet_index.js.html#line10">line 10</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">*</span>
+
+
+    </dd>
+</dl>
+
+    
 
 
 
@@ -14531,7 +17032,7 @@
     
 
     
-    <h4 class="name" id="last"><span class="type-signature"></span>last<span class="signature">(array)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="last"><span class="type-signature"></span>last<span class="signature">(array)</span><span class="type-signature"> &rarr; {any}</span></h4>
     
 
     
@@ -14632,7 +17133,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="common_last_index.js.html">common/last/index.js</a>, <a href="common_last_index.js.html#line5">line 5</a>
+        <a href="common_last_index.js.html">common/last/index.js</a>, <a href="common_last_index.js.html#line6">line 6</a>
     </li></ul></dd>
     
 
@@ -14657,6 +17158,24 @@
 
 
 
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+    
 
 
 
@@ -15638,7 +18157,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="common_minuteNow_index.js.html">common/minuteNow/index.js</a>, <a href="common_minuteNow_index.js.html#line7">line 7</a>
+        <a href="date_minuteNow_index.js.html">date/minuteNow/index.js</a>, <a href="date_minuteNow_index.js.html#line7">line 7</a>
     </li></ul></dd>
     
 
@@ -15801,7 +18320,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="common_monthNow_index.js.html">common/monthNow/index.js</a>, <a href="common_monthNow_index.js.html#line8">line 8</a>
+        <a href="date_monthNow_index.js.html">date/monthNow/index.js</a>, <a href="date_monthNow_index.js.html#line8">line 8</a>
     </li></ul></dd>
     
 
@@ -15907,7 +18426,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="common_mysqlDateNow_index.js.html">common/mysqlDateNow/index.js</a>, <a href="common_mysqlDateNow_index.js.html#line7">line 7</a>
+        <a href="date_mysqlDateNow_index.js.html">date/mysqlDateNow/index.js</a>, <a href="date_mysqlDateNow_index.js.html#line7">line 7</a>
     </li></ul></dd>
     
 
@@ -16453,6 +18972,161 @@
     <dd>
         
 <span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="preLast"><span class="type-signature"></span>preLast<span class="signature">(array)</span><span class="type-signature"> &rarr; {any}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Получаем предпоследний элемент массива
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>array</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Массив.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="common_preLast_index.js.html">common/preLast/index.js</a>, <a href="common_preLast_index.js.html#line6">line 6</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
 
 
     </dd>
@@ -17125,7 +19799,7 @@
     
 
     
-    <h4 class="name" id="prepareUtm"><span class="type-signature"></span>prepareUtm<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="prepareHash"><span class="type-signature"></span>prepareHash<span class="signature">()</span><span class="type-signature"></span></h4>
     
 
     
@@ -17133,7 +19807,8 @@
 
 
 <div class="description">
-    Исправляем Utm параметры в заголовке, что бы гугл их нормально воспринимал из мини-аппа
+    Хэш приложения разделяется и записывается в специальную локальную переменную,
+чтобы его можно было использовать далее.
 </div>
 
 
@@ -17177,7 +19852,97 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="vk_prepareUtm_index.js.html">vk/prepareUtm/index.js</a>, <a href="vk_prepareUtm_index.js.html#line4">line 4</a>
+        <a href="vk_prepareHash_index.js.html">vk/prepareHash/index.js</a>, <a href="vk_prepareHash_index.js.html#line8">line 8</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="prepareUtm"><span class="type-signature"></span>prepareUtm<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Исправляем Utm параметры в заголовке, что бы гугл их нормально воспринимал из мини-аппа.
+Так же полученный хеш разделяется и записывается в специальную локальную переменную,
+чтобы его можно было использовать далее.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="vk_prepareUtm_index.js.html">vk/prepareUtm/index.js</a>, <a href="vk_prepareUtm_index.js.html#line9">line 9</a>
     </li></ul></dd>
     
 
@@ -17443,7 +20208,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="common_secondNow_index.js.html">common/secondNow/index.js</a>, <a href="common_secondNow_index.js.html#line7">line 7</a>
+        <a href="date_secondNow_index.js.html">date/secondNow/index.js</a>, <a href="date_secondNow_index.js.html#line7">line 7</a>
     </li></ul></dd>
     
 
@@ -17662,7 +20427,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="common_secondsToTime_index.js.html">common/secondsToTime/index.js</a>, <a href="common_secondsToTime_index.js.html#line10">line 10</a>
+        <a href="date_secondsToTime_index.js.html">date/secondsToTime/index.js</a>, <a href="date_secondsToTime_index.js.html#line10">line 10</a>
     </li></ul></dd>
     
 
@@ -18590,6 +21355,196 @@
     
 
     
+    <h4 class="name" id="unixToDate"><span class="type-signature"></span>unixToDate<span class="signature">(unixTime, withYear)</span><span class="type-signature"> &rarr; {string}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Получить текущую дату в MySQL формате
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>unixTime</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last">Время в формате Unix.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>withYear</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+
+            <td class="description last">Показывать ли год.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="date_unixToDate_index.js.html">date/unixToDate/index.js</a>, <a href="date_unixToDate_index.js.html#line9">line 9</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
     <h4 class="name" id="useEffectNext"><span class="type-signature"></span>useEffectNext<span class="signature">(effect, dependencies)</span><span class="type-signature"></span></h4>
     
 
@@ -19211,7 +22166,7 @@
     
 
     
-    <h4 class="name" id="vkStat"><span class="type-signature">(async) </span>vkStat<span class="signature">(category, action, label, delimiter, isDebug)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="vkStat"><span class="type-signature">(async) </span>vkStat<span class="signature">(category, action, label, bridgeStatEventParams, isDebug)</span><span class="type-signature"></span></h4>
     
 
     
@@ -19219,7 +22174,7 @@
 
 
 <div class="description">
-    Получение данных из Storage
+    Отслеживание гугл и ВК статистики
 </div>
 
 
@@ -19338,13 +22293,13 @@
 
         <tr>
             
-                <td class="name"><code>delimiter</code></td>
+                <td class="name"><code>bridgeStatEventParams</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type">object</span>
 
 
             
@@ -19355,12 +22310,10 @@
             
                 <td class="default">
                 
-                    --
-                
                 </td>
             
 
-            <td class="description last">Разделитель для статы VK.</td>
+            <td class="description last">Параметры для метода bridgeStatEvent.</td>
         </tr>
 
     
@@ -19818,7 +22771,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="common_yearNow_index.js.html">common/yearNow/index.js</a>, <a href="common_yearNow_index.js.html#line7">line 7</a>
+        <a href="date_yearNow_index.js.html">date/yearNow/index.js</a>, <a href="date_yearNow_index.js.html#line7">line 7</a>
     </li></ul></dd>
     
 
@@ -20039,13 +22992,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#axiosNewUser">axiosNewUser</a></li><li><a href="global.html#axiosRequest">axiosRequest</a></li><li><a href="global.html#axiosRequestDefault">axiosRequestDefault</a></li><li><a href="global.html#bridgeApiRequest">bridgeApiRequest</a></li><li><a href="global.html#bridgeGetAccessToken">bridgeGetAccessToken</a></li><li><a href="global.html#bridgeGetAccessTokenAndSave">bridgeGetAccessTokenAndSave</a></li><li><a href="global.html#bridgeGetStorage">bridgeGetStorage</a></li><li><a href="global.html#bridgeGetStorageFormatted">bridgeGetStorageFormatted</a></li><li><a href="global.html#bridgeInitApp">bridgeInitApp</a></li><li><a href="global.html#bridgeSetStatusBar">bridgeSetStatusBar</a></li><li><a href="global.html#bridgeSetStorage">bridgeSetStorage</a></li><li><a href="global.html#bridgeShareStory">bridgeShareStory</a></li><li><a href="global.html#bridgeShareStoryWithOpenApp">bridgeShareStoryWithOpenApp</a></li><li><a href="global.html#bridgeShowInterstitialAd">bridgeShowInterstitialAd</a></li><li><a href="global.html#bridgeShowRewardAd">bridgeShowRewardAd</a></li><li><a href="global.html#bridgeStatEvent">bridgeStatEvent</a></li><li><a href="global.html#bridgeSubscribe">bridgeSubscribe</a></li><li><a href="global.html#bridgeSubscribeNotificationsOnOff">bridgeSubscribeNotificationsOnOff</a></li><li><a href="global.html#bridgeTurnOffNotifications">bridgeTurnOffNotifications</a></li><li><a href="global.html#bridgeTurnOnNotifications">bridgeTurnOnNotifications</a></li><li><a href="global.html#bridgeVibrationHeavy">bridgeVibrationHeavy</a></li><li><a href="global.html#bridgeVibrationLight">bridgeVibrationLight</a></li><li><a href="global.html#bridgeVibrationMedium">bridgeVibrationMedium</a></li><li><a href="global.html#calcBorderRadiusFunc">calcBorderRadiusFunc</a></li><li><a href="global.html#calcCircleFunc">calcCircleFunc</a></li><li><a href="global.html#chunks">chunks</a></li><li><a href="global.html#copy">copy</a></li><li><a href="global.html#dayNow">dayNow</a></li><li><a href="global.html#Delimiter">Delimiter</a></li><li><a href="global.html#devLog">devLog</a></li><li><a href="global.html#EmptySpace">EmptySpace</a></li><li><a href="global.html#equal">equal</a></li><li><a href="global.html#equalTo">equalTo</a></li><li><a href="global.html#erudaHide">erudaHide</a></li><li><a href="global.html#erudaHideIcon">erudaHideIcon</a></li><li><a href="global.html#erudaInit">erudaInit</a></li><li><a href="global.html#erudaShow">erudaShow</a></li><li><a href="global.html#erudaShowIcon">erudaShowIcon</a></li><li><a href="global.html#FontPreloader">FontPreloader</a></li><li><a href="global.html#formatDateToMysql">formatDateToMysql</a></li><li><a href="global.html#getAnimatableEndEvent">getAnimatableEndEvent</a></li><li><a href="global.html#getAppHash">getAppHash</a></li><li><a href="global.html#getAppId">getAppId</a></li><li><a href="global.html#getAppLang">getAppLang</a></li><li><a href="global.html#getAppNotifyStatus">getAppNotifyStatus</a></li><li><a href="global.html#getAppPlatform">getAppPlatform</a></li><li><a href="global.html#getAppUserId">getAppUserId</a></li><li><a href="global.html#getNewRequestId">getNewRequestId</a></li><li><a href="global.html#googleEvent">googleEvent</a></li><li><a href="global.html#googleEventAd">googleEventAd</a></li><li><a href="global.html#googleEventAdInterstitialFail">googleEventAdInterstitialFail</a></li><li><a href="global.html#googleEventAdInterstitialSuccess">googleEventAdInterstitialSuccess</a></li><li><a href="global.html#googleEventAdInterstitialTotal">googleEventAdInterstitialTotal</a></li><li><a href="global.html#googleEventAdRewardFail">googleEventAdRewardFail</a></li><li><a href="global.html#googleEventAdRewardSuccess">googleEventAdRewardSuccess</a></li><li><a href="global.html#googleEventAdRewardTotal">googleEventAdRewardTotal</a></li><li><a href="global.html#googleEventButton">googleEventButton</a></li><li><a href="global.html#googleEventClick">googleEventClick</a></li><li><a href="global.html#googleEventHash">googleEventHash</a></li><li><a href="global.html#googleEventInitApp">googleEventInitApp</a></li><li><a href="global.html#googleEventPage">googleEventPage</a></li><li><a href="global.html#googleEventShare">googleEventShare</a></li><li><a href="global.html#googleEventShareStoryFail">googleEventShareStoryFail</a></li><li><a href="global.html#googleEventShareStorySuccess">googleEventShareStorySuccess</a></li><li><a href="global.html#googleEventShareStoryTotal">googleEventShareStoryTotal</a></li><li><a href="global.html#googleEventShareWallFail">googleEventShareWallFail</a></li><li><a href="global.html#googleEventShareWallSuccess">googleEventShareWallSuccess</a></li><li><a href="global.html#googleEventShareWallTotal">googleEventShareWallTotal</a></li><li><a href="global.html#googleGtmEvent">googleGtmEvent</a></li><li><a href="global.html#googleGtmInit">googleGtmInit</a></li><li><a href="global.html#googleInit">googleInit</a></li><li><a href="global.html#hourNow">hourNow</a></li><li><a href="global.html#isDesktopWeb">isDesktopWeb</a></li><li><a href="global.html#isDevelopment">isDevelopment</a></li><li><a href="global.html#isLast">isLast</a></li><li><a href="global.html#isMobile">isMobile</a></li><li><a href="global.html#isMobileAndroid">isMobileAndroid</a></li><li><a href="global.html#isMobileIphone">isMobileIphone</a></li><li><a href="global.html#isMobileWeb">isMobileWeb</a></li><li><a href="global.html#isProduction">isProduction</a></li><li><a href="global.html#isResponseFail">isResponseFail</a></li><li><a href="global.html#isResponseSuccess">isResponseSuccess</a></li><li><a href="global.html#isScreenGreater">isScreenGreater</a></li><li><a href="global.html#isScreenGreaterOrEqual">isScreenGreaterOrEqual</a></li><li><a href="global.html#isScreenLess">isScreenLess</a></li><li><a href="global.html#isScreenLessOrEqual">isScreenLessOrEqual</a></li><li><a href="global.html#konvaAddContainer">konvaAddContainer</a></li><li><a href="global.html#konvaFillHorizontal">konvaFillHorizontal</a></li><li><a href="global.html#konvaFillHorizontalFullWidth">konvaFillHorizontalFullWidth</a></li><li><a href="global.html#konvaHeight">konvaHeight</a></li><li><a href="global.html#konvaLoadImage">konvaLoadImage</a></li><li><a href="global.html#konvaLoadImageCircle">konvaLoadImageCircle</a></li><li><a href="global.html#konvaLoadImageWithParams">konvaLoadImageWithParams</a></li><li><a href="global.html#konvaRemoveContainer">konvaRemoveContainer</a></li><li><a href="global.html#konvaRenderToConsole">konvaRenderToConsole</a></li><li><a href="global.html#konvaSafeAddImage">konvaSafeAddImage</a></li><li><a href="global.html#konvaWidth">konvaWidth</a></li><li><a href="global.html#konvaX">konvaX</a></li><li><a href="global.html#konvaY">konvaY</a></li><li><a href="global.html#last">last</a></li><li><a href="global.html#leadingZero">leadingZero</a></li><li><a href="global.html#loadImage">loadImage</a></li><li><a href="global.html#loadKonvaImageWithBorders">loadKonvaImageWithBorders</a></li><li><a href="global.html#loggerInit">loggerInit</a></li><li><a href="global.html#md5">md5</a></li><li><a href="global.html#minuteNow">minuteNow</a></li><li><a href="global.html#monthNow">monthNow</a></li><li><a href="global.html#mysqlDateNow">mysqlDateNow</a></li><li><a href="global.html#numberWithSpaces">numberWithSpaces</a></li><li><a href="global.html#openLink">openLink</a></li><li><a href="global.html#openLinkBlank">openLinkBlank</a></li><li><a href="global.html#preloadImage">preloadImage</a></li><li><a href="global.html#preloadImages">preloadImages</a></li><li><a href="global.html#preloadImagesAll">preloadImagesAll</a></li><li><a href="global.html#preloadImagesByPacks">preloadImagesByPacks</a></li><li><a href="global.html#prepareUtm">prepareUtm</a></li><li><a href="global.html#randomInt">randomInt</a></li><li><a href="global.html#secondNow">secondNow</a></li><li><a href="global.html#secondsToTime">secondsToTime</a></li><li><a href="global.html#setVkAccessToken">setVkAccessToken</a></li><li><a href="global.html#setVkApiVersion">setVkApiVersion</a></li><li><a href="global.html#showBridgeResult">showBridgeResult</a></li><li><a href="global.html#timeLog">timeLog</a></li><li><a href="global.html#timeLogEnd">timeLogEnd</a></li><li><a href="global.html#timeLogStart">timeLogStart</a></li><li><a href="global.html#useEffectNext">useEffectNext</a></li><li><a href="global.html#useEruda">useEruda</a></li><li><a href="global.html#useEventListener">useEventListener</a></li><li><a href="global.html#usePath">usePath</a></li><li><a href="global.html#vkStat">vkStat</a></li><li><a href="global.html#wordCase">wordCase</a></li><li><a href="global.html#yearNow">yearNow</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#axiosNewUser">axiosNewUser</a></li><li><a href="global.html#axiosRequest">axiosRequest</a></li><li><a href="global.html#axiosRequestDefault">axiosRequestDefault</a></li><li><a href="global.html#bridgeApiRequest">bridgeApiRequest</a></li><li><a href="global.html#bridgeCloseApp">bridgeCloseApp</a></li><li><a href="global.html#bridgeDownloadFile">bridgeDownloadFile</a></li><li><a href="global.html#bridgeGetAccessToken">bridgeGetAccessToken</a></li><li><a href="global.html#bridgeGetAccessTokenAndSave">bridgeGetAccessTokenAndSave</a></li><li><a href="global.html#bridgeGetStorage">bridgeGetStorage</a></li><li><a href="global.html#bridgeGetStorageFormatted">bridgeGetStorageFormatted</a></li><li><a href="global.html#bridgeInitApp">bridgeInitApp</a></li><li><a href="global.html#bridgeSetStatusBar">bridgeSetStatusBar</a></li><li><a href="global.html#bridgeSetStorage">bridgeSetStorage</a></li><li><a href="global.html#bridgeShareStory">bridgeShareStory</a></li><li><a href="global.html#bridgeShareStoryWithOpenApp">bridgeShareStoryWithOpenApp</a></li><li><a href="global.html#bridgeShowImages">bridgeShowImages</a></li><li><a href="global.html#bridgeShowInterstitialAd">bridgeShowInterstitialAd</a></li><li><a href="global.html#bridgeShowRewardAd">bridgeShowRewardAd</a></li><li><a href="global.html#bridgeStatEvent">bridgeStatEvent</a></li><li><a href="global.html#bridgeSubscribe">bridgeSubscribe</a></li><li><a href="global.html#bridgeSubscribeNotificationsOnOff">bridgeSubscribeNotificationsOnOff</a></li><li><a href="global.html#bridgeSubscribeTheme">bridgeSubscribeTheme</a></li><li><a href="global.html#bridgeSwipeDisable">bridgeSwipeDisable</a></li><li><a href="global.html#bridgeSwipeEnable">bridgeSwipeEnable</a></li><li><a href="global.html#bridgeTurnOffNotifications">bridgeTurnOffNotifications</a></li><li><a href="global.html#bridgeTurnOnNotifications">bridgeTurnOnNotifications</a></li><li><a href="global.html#bridgeVibrationHeavy">bridgeVibrationHeavy</a></li><li><a href="global.html#bridgeVibrationLight">bridgeVibrationLight</a></li><li><a href="global.html#bridgeVibrationMedium">bridgeVibrationMedium</a></li><li><a href="global.html#bridgeVkPay">bridgeVkPay</a></li><li><a href="global.html#calcBorderRadiusFunc">calcBorderRadiusFunc</a></li><li><a href="global.html#calcCircleFunc">calcCircleFunc</a></li><li><a href="global.html#chunks">chunks</a></li><li><a href="global.html#copy">copy</a></li><li><a href="global.html#dayNow">dayNow</a></li><li><a href="global.html#Delimiter">Delimiter</a></li><li><a href="global.html#devLog">devLog</a></li><li><a href="global.html#downloadBlob">downloadBlob</a></li><li><a href="global.html#EmptySpace">EmptySpace</a></li><li><a href="global.html#equal">equal</a></li><li><a href="global.html#equalTo">equalTo</a></li><li><a href="global.html#erudaHide">erudaHide</a></li><li><a href="global.html#erudaHideIcon">erudaHideIcon</a></li><li><a href="global.html#erudaInit">erudaInit</a></li><li><a href="global.html#erudaShow">erudaShow</a></li><li><a href="global.html#erudaShowIcon">erudaShowIcon</a></li><li><a href="global.html#FontPreloader">FontPreloader</a></li><li><a href="global.html#formatDateToMysql">formatDateToMysql</a></li><li><a href="global.html#getAnimatableEndEvent">getAnimatableEndEvent</a></li><li><a href="global.html#getAppHash">getAppHash</a></li><li><a href="global.html#getAppId">getAppId</a></li><li><a href="global.html#getAppLang">getAppLang</a></li><li><a href="global.html#getAppNotifyStatus">getAppNotifyStatus</a></li><li><a href="global.html#getAppPlatform">getAppPlatform</a></li><li><a href="global.html#getAppUserId">getAppUserId</a></li><li><a href="global.html#getNewRequestId">getNewRequestId</a></li><li><a href="global.html#googleEvent">googleEvent</a></li><li><a href="global.html#googleEventAd">googleEventAd</a></li><li><a href="global.html#googleEventAdInterstitialFail">googleEventAdInterstitialFail</a></li><li><a href="global.html#googleEventAdInterstitialSuccess">googleEventAdInterstitialSuccess</a></li><li><a href="global.html#googleEventAdInterstitialTotal">googleEventAdInterstitialTotal</a></li><li><a href="global.html#googleEventAdRewardFail">googleEventAdRewardFail</a></li><li><a href="global.html#googleEventAdRewardSuccess">googleEventAdRewardSuccess</a></li><li><a href="global.html#googleEventAdRewardTotal">googleEventAdRewardTotal</a></li><li><a href="global.html#googleEventButton">googleEventButton</a></li><li><a href="global.html#googleEventClick">googleEventClick</a></li><li><a href="global.html#googleEventHash">googleEventHash</a></li><li><a href="global.html#googleEventInitApp">googleEventInitApp</a></li><li><a href="global.html#googleEventPage">googleEventPage</a></li><li><a href="global.html#googleEventShare">googleEventShare</a></li><li><a href="global.html#googleEventShareStoryFail">googleEventShareStoryFail</a></li><li><a href="global.html#googleEventShareStorySuccess">googleEventShareStorySuccess</a></li><li><a href="global.html#googleEventShareStoryTotal">googleEventShareStoryTotal</a></li><li><a href="global.html#googleEventShareWallFail">googleEventShareWallFail</a></li><li><a href="global.html#googleEventShareWallSuccess">googleEventShareWallSuccess</a></li><li><a href="global.html#googleEventShareWallTotal">googleEventShareWallTotal</a></li><li><a href="global.html#googleGtmEvent">googleGtmEvent</a></li><li><a href="global.html#googleGtmInit">googleGtmInit</a></li><li><a href="global.html#googleInit">googleInit</a></li><li><a href="global.html#hourNow">hourNow</a></li><li><a href="global.html#isDesktopWeb">isDesktopWeb</a></li><li><a href="global.html#isDevelopment">isDevelopment</a></li><li><a href="global.html#isInternetOnline">isInternetOnline</a></li><li><a href="global.html#isIosApp">isIosApp</a></li><li><a href="global.html#isLast">isLast</a></li><li><a href="global.html#isMobile">isMobile</a></li><li><a href="global.html#isMobileAndroid">isMobileAndroid</a></li><li><a href="global.html#isMobileAndroidMessenger">isMobileAndroidMessenger</a></li><li><a href="global.html#isMobileApp">isMobileApp</a></li><li><a href="global.html#isMobileIpad">isMobileIpad</a></li><li><a href="global.html#isMobileIphone">isMobileIphone</a></li><li><a href="global.html#isMobileIphoneMessenger">isMobileIphoneMessenger</a></li><li><a href="global.html#isMobileMessenger">isMobileMessenger</a></li><li><a href="global.html#isMobileVkApp">isMobileVkApp</a></li><li><a href="global.html#isMobileWeb">isMobileWeb</a></li><li><a href="global.html#isProduction">isProduction</a></li><li><a href="global.html#isResponseFail">isResponseFail</a></li><li><a href="global.html#isResponseSuccess">isResponseSuccess</a></li><li><a href="global.html#isScreenGreater">isScreenGreater</a></li><li><a href="global.html#isScreenGreaterOrEqual">isScreenGreaterOrEqual</a></li><li><a href="global.html#isScreenLess">isScreenLess</a></li><li><a href="global.html#isScreenLessOrEqual">isScreenLessOrEqual</a></li><li><a href="global.html#isset">isset</a></li><li><a href="global.html#issetGet">issetGet</a></li><li><a href="global.html#konvaAddContainer">konvaAddContainer</a></li><li><a href="global.html#konvaFillHorizontal">konvaFillHorizontal</a></li><li><a href="global.html#konvaFillHorizontalFullWidth">konvaFillHorizontalFullWidth</a></li><li><a href="global.html#konvaHeight">konvaHeight</a></li><li><a href="global.html#konvaLoadImage">konvaLoadImage</a></li><li><a href="global.html#konvaLoadImageCircle">konvaLoadImageCircle</a></li><li><a href="global.html#konvaLoadImageWithParams">konvaLoadImageWithParams</a></li><li><a href="global.html#konvaRemoveContainer">konvaRemoveContainer</a></li><li><a href="global.html#konvaRenderToConsole">konvaRenderToConsole</a></li><li><a href="global.html#konvaSafeAddImage">konvaSafeAddImage</a></li><li><a href="global.html#konvaWidth">konvaWidth</a></li><li><a href="global.html#konvaX">konvaX</a></li><li><a href="global.html#konvaY">konvaY</a></li><li><a href="global.html#last">last</a></li><li><a href="global.html#leadingZero">leadingZero</a></li><li><a href="global.html#loadImage">loadImage</a></li><li><a href="global.html#loadKonvaImageWithBorders">loadKonvaImageWithBorders</a></li><li><a href="global.html#loggerInit">loggerInit</a></li><li><a href="global.html#md5">md5</a></li><li><a href="global.html#minuteNow">minuteNow</a></li><li><a href="global.html#monthNow">monthNow</a></li><li><a href="global.html#mysqlDateNow">mysqlDateNow</a></li><li><a href="global.html#numberWithSpaces">numberWithSpaces</a></li><li><a href="global.html#openLink">openLink</a></li><li><a href="global.html#openLinkBlank">openLinkBlank</a></li><li><a href="global.html#preLast">preLast</a></li><li><a href="global.html#preloadImage">preloadImage</a></li><li><a href="global.html#preloadImages">preloadImages</a></li><li><a href="global.html#preloadImagesAll">preloadImagesAll</a></li><li><a href="global.html#preloadImagesByPacks">preloadImagesByPacks</a></li><li><a href="global.html#prepareHash">prepareHash</a></li><li><a href="global.html#prepareUtm">prepareUtm</a></li><li><a href="global.html#randomInt">randomInt</a></li><li><a href="global.html#secondNow">secondNow</a></li><li><a href="global.html#secondsToTime">secondsToTime</a></li><li><a href="global.html#setVkAccessToken">setVkAccessToken</a></li><li><a href="global.html#setVkApiVersion">setVkApiVersion</a></li><li><a href="global.html#showBridgeResult">showBridgeResult</a></li><li><a href="global.html#timeLog">timeLog</a></li><li><a href="global.html#timeLogEnd">timeLogEnd</a></li><li><a href="global.html#timeLogStart">timeLogStart</a></li><li><a href="global.html#unixToDate">unixToDate</a></li><li><a href="global.html#useEffectNext">useEffectNext</a></li><li><a href="global.html#useEruda">useEruda</a></li><li><a href="global.html#useEventListener">useEventListener</a></li><li><a href="global.html#usePath">usePath</a></li><li><a href="global.html#vkStat">vkStat</a></li><li><a href="global.html#wordCase">wordCase</a></li><li><a href="global.html#yearNow">yearNow</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Thu Mar 25 2021 14:33:12 GMT+0300 (Moscow Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Wed Apr 28 2021 14:28:21 GMT+0300 (Moscow Standard Time)
 </footer>
 
 <script> prettyPrint(); </script>

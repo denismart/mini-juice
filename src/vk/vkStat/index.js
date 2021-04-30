@@ -3,17 +3,39 @@ import bridgeStatEvent from '../bridgeStatEvent';
 import devLog from '../../common/devLog';
 
 /**
- * Получение данных из Storage
+ * Отслеживание гугл и ВК статистики
  * @param {string} category - Название категории.
  * @param {string} action - Название действия.
  * @param {string} label - Название метки.
- * @param {string} delimiter - Разделитель для статы VK.
+ * @param {object} bridgeStatEventParams - Параметры для метода bridgeStatEvent.
  * @param {boolean} isDebug - режим отладки.
  */
-const vkStat = async (category, action, label = undefined, delimiter = '--', isDebug = false) => {
+const vkStat = async (
+    category,
+    action,
+    label = undefined,
+    bridgeStatEventParams = {},
+    isDebug = false,
+) => {
+    const delimiter = bridgeStatEventParams.delimiter || '--';
+
+    let json = bridgeStatEventParams && bridgeStatEventParams.json
+        ? bridgeStatEventParams.json
+        : {};
+    if (label) {
+        json = { ...json, label };
+    }
+
     const googleGtmEventResult = googleGtmEvent(category, action, label);
-    const bridgeStatEventResult = await bridgeStatEvent(`${category}${delimiter}${action}${delimiter}${label}`)
-        .catch((error) => console.log(error));
+
+    const bridgeStatEventResult = await bridgeStatEvent(
+        `${category}${delimiter}${action}`,
+        bridgeStatEventParams.screen,
+        json,
+        bridgeStatEventParams.params,
+        bridgeStatEventParams.accessToken,
+        bridgeStatEventParams.version,
+    ).catch(console.log);
 
     devLog('-------------', isDebug);
     devLog('stats result:', isDebug);

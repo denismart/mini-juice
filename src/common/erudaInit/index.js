@@ -1,6 +1,6 @@
 import * as eruda from 'eruda';
-import isDevelopment from '../isDevelopment/index';
 import MINI from '../../locals/MINI';
+import isDevelopment from '../isDevelopment/index';
 
 /**
  * Включаем eruda для отладки
