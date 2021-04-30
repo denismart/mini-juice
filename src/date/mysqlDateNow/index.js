@@ -1,4 +1,4 @@
-import formatDateToMysql from '../formatDateToMysql/index';
+import formatDateToMysql from '../../common/formatDateToMysql';
 
 /**
  * Получить текущую дату в MySQL формате

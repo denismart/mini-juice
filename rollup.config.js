@@ -27,6 +27,7 @@ export default [
             'crypto-js',
             'crypto-js/md5',
             'react-router',
+            'lodash',
         ],
     },
     {
@@ -58,6 +59,7 @@ export default [
             'crypto-js',
             'crypto-js/md5',
             'react-router',
+            'lodash',
         ],
     },
 ];

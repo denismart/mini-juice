@@ -3,6 +3,6 @@
  * @param {Object} response - Тело результата.
  * @return {boolean}
  */
-const isResponseFail = (response) => response.result === 'fail';
+const isResponseFail = (response) => !response || response.result === 'fail';
 
 export default isResponseFail;

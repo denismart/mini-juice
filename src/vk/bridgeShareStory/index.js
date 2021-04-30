@@ -20,15 +20,21 @@ const bridgeShareStory = (base64Image, params = {}) => {
         locked: true,
         blob: base64Image,
         ...params,
-    }).then(() => {
-        if (MINI.GOOGLE_INITIALIZED && MINI.VK_AUTO_GOOGLE_EVENTS_SHARE) {
-            googleEventShareStorySuccess();
-        }
-    }).catch(() => {
-        if (MINI.VK_AUTO_GOOGLE_EVENTS_SHARE) {
-            googleEventShareStoryFail();
-        }
-    });
+    })
+        .then((response) => {
+            if (MINI.GOOGLE_INITIALIZED && MINI.VK_AUTO_GOOGLE_EVENTS_SHARE) {
+                googleEventShareStorySuccess();
+            }
+
+            return response;
+        })
+        .catch((error) => {
+            if (MINI.VK_AUTO_GOOGLE_EVENTS_SHARE) {
+                googleEventShareStoryFail();
+            }
+
+            throw error;
+        });
 };
 
 export default bridgeShareStory;

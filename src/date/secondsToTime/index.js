@@ -1,4 +1,4 @@
-import leadingZero from '../leadingZero/index';
+import leadingZero from '../../common/leadingZero';
 
 /**
  * Конвертирует секунды во время
