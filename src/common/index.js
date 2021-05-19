@@ -11,6 +11,7 @@ export { default as erudaShow } from './erudaShow/index';
 export { default as erudaShowIcon } from './erudaShowIcon/index';
 export { default as formatDateToMysql } from './formatDateToMysql/index';
 export { default as getAnimationEndEvent } from './getAnimationEndEvent/index';
+export { default as getWebClassName } from './getWebClassName/index';
 export { default as isDevelopment } from './isDevelopment/index';
 export { default as isInternetOnline } from './isInternetOnline/index';
 export { default as isLast } from './isLast/index';
