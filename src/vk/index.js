@@ -31,6 +31,7 @@ export { default as getAppLang } from './getAppLang/index';
 export { default as getAppNotifyStatus } from './getAppNotifyStatus/index';
 export { default as getAppPlatform } from './getAppPlatform/index';
 export { default as getAppUserId } from './getAppUserId/index';
+export { default as isAndroidApp } from './isAndroidApp/index';
 export { default as isDesktopWeb } from './isDesktopWeb/index';
 export { default as isIosApp } from './isIosApp/index';
 export { default as isMobile } from './isMobile/index';
