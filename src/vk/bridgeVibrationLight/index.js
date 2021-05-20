@@ -5,9 +5,11 @@ import vkBridge from '@vkontakte/vk-bridge';
  * @return {Promise}
  */
 const bridgeVibrationLight = () => {
-	if (vkBridge.supports('VKWebAppTapticImpactOccurred')) {
-		return vkBridge.send('VKWebAppTapticImpactOccurred', { style: 'light' });
-	}
+    if (vkBridge.supports('VKWebAppTapticImpactOccurred')) {
+        return vkBridge.send('VKWebAppTapticImpactOccurred', { style: 'light' });
+    }
+
+    return Promise.resolve(false);
 };
 
 export default bridgeVibrationLight;

@@ -11,11 +11,13 @@ const bridgeSetStatusBar = (
         navigation_bar_color: undefined,
     },
 ) => {
-	if (vkBridge.supports('VKWebAppSetViewSettings')) {
-		return vkBridge.send('VKWebAppSetViewSettings', {
-			...params,
-		});
-	}
+    if (vkBridge.supports('VKWebAppSetViewSettings')) {
+        return vkBridge.send('VKWebAppSetViewSettings', {
+            ...params,
+        });
+    }
+
+    return Promise.resolve(false);
 };
 
 export default bridgeSetStatusBar;
