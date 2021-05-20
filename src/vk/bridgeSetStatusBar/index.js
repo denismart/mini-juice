@@ -10,8 +10,12 @@ const bridgeSetStatusBar = (
         action_bar_color: undefined,
         navigation_bar_color: undefined,
     },
-) => vkBridge.send('VKWebAppSetViewSettings', {
-    ...params,
-});
+) => {
+	if (vkBridge.supports('VKWebAppSetViewSettings')) {
+		return vkBridge.send('VKWebAppSetViewSettings', {
+			...params,
+		});
+	}
+};
 
 export default bridgeSetStatusBar;
