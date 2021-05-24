@@ -5,9 +5,11 @@ import vkBridge from '@vkontakte/vk-bridge';
  * @return {Promise}
  */
 const bridgeVibrationHeavy = () => {
-	if (vkBridge.supports('VKWebAppTapticImpactOccurred')) {
-		return vkBridge.send('VKWebAppTapticImpactOccurred', { style: 'heavy' });
-	}
+    if (vkBridge.supports('VKWebAppTapticImpactOccurred')) {
+        return vkBridge.send('VKWebAppTapticImpactOccurred', { style: 'heavy' });
+    }
+
+    return Promise.resolve(false);
 };
 
 export default bridgeVibrationHeavy;

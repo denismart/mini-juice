@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: common/md5/index.js</title>
+    <title>JSDoc: Source: common/sleep/index.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: common/md5/index.js</h1>
+    <h1 class="page-title">Source: common/sleep/index.js</h1>
 
     
 
@@ -26,15 +26,14 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>import cryptoMd5 from 'crypto-js/md5';
-
-/**
- * Преобразовать значение в md5 строку
- * @param {Array | Object | string | number | boolean} value - Значение, которое надо преобразовать.
+            <pre class="prettyprint source linenums"><code>/**
+ * Сделать паузу
+ * @param {number} ms - Время в миллисекундах.
+ * @return {any}
  */
-const md5 = (value) => (typeof value === 'string' ? cryptoMd5(value) : cryptoMd5(JSON.stringify(value)));
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-export default md5;
+export default sleep;
 </code></pre>
         </article>
     </section>
