@@ -36,6 +36,7 @@ export { default as preloadImages } from './preloadImages/index';
 export { default as preloadImagesAll } from './preloadImagesAll/index';
 export { default as preloadImagesByPacks } from './preloadImagesByPacks/index';
 export { default as randomInt } from './randomInt/index';
+export { default as sleep } from './sleep/index';
 export { default as timeLog } from './timeLog/index';
 export { default as timeLogEnd } from './timeLogEnd/index';
 export { default as timeLogStart } from './timeLogStart/index';
