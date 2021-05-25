@@ -6,6 +6,7 @@ const MINI = {
     VK_AUTO_GOOGLE_EVENTS_SHOW_AD: true,
     ERUDA_INIT: false,
     APP_HASH: {},
+    APP_HASH_FULL: '',
 };
 
 export default MINI;
