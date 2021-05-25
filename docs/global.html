@@ -3228,7 +3228,7 @@
     
 
     
-    <h4 class="name" id="bridgeStatEvent"><span class="type-signature">(async) </span>bridgeStatEvent<span class="signature">(event, screen, json, params, accessToken, version)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id="bridgeStatEvent"><span class="type-signature">(async) </span>bridgeStatEvent<span class="signature">(event, json, screen, params, accessToken, version)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
     
 
     
@@ -3295,29 +3295,6 @@
 
         <tr>
             
-                <td class="name"><code>screen</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">string</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Экран на котором происходит.</td>
-        </tr>
-
-    
-
-        <tr>
-            
                 <td class="name"><code>json</code></td>
             
 
@@ -3335,6 +3312,29 @@
             
 
             <td class="description last">Действие после загрузки.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>screen</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Экран на котором происходит.</td>
         </tr>
 
     
@@ -11383,7 +11383,7 @@
     
 
     
-    <h4 class="name" id="googleGtmInit"><span class="type-signature">(async) </span>googleGtmInit<span class="signature">(gtmCode, dataLayer, actionAfterLoad)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id="googleGtmInit"><span class="type-signature">(async) </span>googleGtmInit<span class="signature">(gtmCode, isNeedPrepareGtm, actionAfterLoad, dataLayer)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
     
 
     
@@ -11456,13 +11456,13 @@
 
         <tr>
             
-                <td class="name"><code>dataLayer</code></td>
+                <td class="name"><code>isNeedPrepareGtm</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">string</span>
+<span class="param-type">boolean</span>
 
 
             
@@ -11473,12 +11473,12 @@
             
                 <td class="default">
                 
-                    dataLayer
+                    true
                 
                 </td>
             
 
-            <td class="description last">Название слоя с данными.</td>
+            <td class="description last">Нужно ли подготавливать GTM-теги автоматически.</td>
         </tr>
 
     
@@ -11506,6 +11506,35 @@
             
 
             <td class="description last">Действие после загрузки.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>dataLayer</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+                <td class="default">
+                
+                    dataLayer
+                
+                </td>
+            
+
+            <td class="description last">Название слоя с данными.</td>
         </tr>
 
     
@@ -11546,7 +11575,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="googleGtm_googleGtmInit_index.js.html">googleGtm/googleGtmInit/index.js</a>, <a href="googleGtm_googleGtmInit_index.js.html#line10">line 10</a>
+        <a href="googleGtm_googleGtmInit_index.js.html">googleGtm/googleGtmInit/index.js</a>, <a href="googleGtm_googleGtmInit_index.js.html#line11">line 11</a>
     </li></ul></dd>
     
 
@@ -22795,7 +22824,7 @@
     
 
     
-    <h4 class="name" id="vkStat"><span class="type-signature">(async) </span>vkStat<span class="signature">(category, action, label, bridgeStatEventParams, isDebug)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="vkStat"><span class="type-signature">(async) </span>vkStat<span class="signature">(params, bridgeStatEventParams, isDebug)</span><span class="type-signature"></span></h4>
     
 
     
@@ -22829,7 +22858,47 @@
         
 
         
-        <th>Default</th>
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>params</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Параметры функции.
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
         
 
         <th class="last">Description</th>
@@ -22856,10 +22925,6 @@
             
 
             
-                <td class="default">
-                
-                </td>
-            
 
             <td class="description last">Название категории.</td>
         </tr>
@@ -22882,10 +22947,6 @@
 
             
 
-            
-                <td class="default">
-                
-                </td>
             
 
             <td class="description last">Название действия.</td>
@@ -22910,12 +22971,15 @@
             
 
             
-                <td class="default">
-                
-                </td>
-            
 
             <td class="description last">Название метки.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
         </tr>
 
     
@@ -22936,10 +23000,6 @@
 
             
 
-            
-                <td class="default">
-                
-                </td>
             
 
             <td class="description last">Параметры для метода bridgeStatEvent.</td>
@@ -22963,12 +23023,6 @@
 
             
 
-            
-                <td class="default">
-                
-                    false
-                
-                </td>
             
 
             <td class="description last">режим отладки.</td>
@@ -23012,7 +23066,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="vk_vkStat_index.js.html">vk/vkStat/index.js</a>, <a href="vk_vkStat_index.js.html#line13">line 13</a>
+        <a href="vk_vkStat_index.js.html">vk/vkStat/index.js</a>, <a href="vk_vkStat_index.js.html#line14">line 14</a>
     </li></ul></dd>
     
 
@@ -23627,7 +23681,7 @@
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Mon May 24 2021 17:09:45 GMT+0300 (Moscow Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Tue May 25 2021 17:20:28 GMT+0300 (Moscow Standard Time)
 </footer>
 
 <script> prettyPrint(); </script>
