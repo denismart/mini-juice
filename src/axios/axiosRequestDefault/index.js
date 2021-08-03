@@ -1,4 +1,5 @@
 import axiosRequest from '../axiosRequest';
+import prepareLinkForOdr from '../../vk/prepareLinkForOdr';
 
 /**
  * Запрос
@@ -18,7 +19,7 @@ const axiosRequestDefault = (
     params = {},
     headers = {},
 ) => axiosRequest(
-    `${process.env.REACT_APP_BACK_URL}/${method}`,
+    `${prepareLinkForOdr(process.env.REACT_APP_BACK_URL)}/${method}`,
     'post',
     postData,
     isCheckUser,

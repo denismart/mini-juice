@@ -45,6 +45,7 @@ export { default as isMobileMessenger } from './isMobileMessenger/index';
 export { default as isMobileVkApp } from './isMobileVkApp/index';
 export { default as isMobileWeb } from './isMobileWeb/index';
 export { default as prepareHash } from './prepareHash/index';
+export { default as prepareLinkForOdr } from './prepareLinkForOdr/index';
 export { default as prepareUtm } from './prepareUtm/index';
 export { default as randomizeRequestId } from './randomizeRequestId/index';
 export { default as showBridgeResult } from './showBridgeResult/index';
